@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
       score: {
         type: DataTypes.INTEGER,
       },
-
       gameId: {
         type: DataTypes.INTEGER,
       },

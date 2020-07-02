@@ -15,14 +15,12 @@ module.exports = (sequelize, DataTypes) => {
 
       gameId: {
         type: DataTypes.INTEGER,
-        allowNull: false,
       },
     },
     {}
   );
   player.associate = function (models) {
     player.belongsTo(models.game);
-    player.hasMany(models.game);
   };
   return player;
 };

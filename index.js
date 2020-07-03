@@ -8,6 +8,10 @@ const app = express();
 const bodyParserMiddleWare = express.json();
 app.use(bodyParserMiddleWare);
 
+// router:
+const gameRouter = require("./routers/game")
+app.use("/game", gameRouter);
+
 // Listen for connections on specified port (default is port 4000):
 const { PORT } = require("./config/constants");
 

@@ -24,7 +24,7 @@ router.post("/", async (req, res, next) => {
     }));
     await Player.bulkCreate(newPlayers);
 
-    return res.status(201).send({ message: "players created" });
+    return res.status(201).send({ message: "game and players created" });
   } catch (error) {
     next(error);
   }
